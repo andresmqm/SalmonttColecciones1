@@ -1,0 +1,5 @@
+15.666.888-8;Punta Quetén;Los Lagos;1000
+15.654.123-5;Leucayec;Aysén;50000
+20.963.753-0;Llanquihue;Los Lagos;2800
+13.159.951-k;Apiao;Los Lagos/Chiloé;3200
+11.853.349-6;choen;Aysen;1000

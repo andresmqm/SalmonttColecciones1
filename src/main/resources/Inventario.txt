@@ -1,0 +1,5 @@
+1;Nuggets de Salmón;Trozos pequeños de salmón generalmente apanados o listos para freír u hornear;5;5000
+2;Salmón con Piel;La piel ayuda a mantener la jugosidad al cocina;10;6000
+3;Salmón sin Piel;Salmón cortado en cubos uniformes, listo para usar. Perfecto para preparaciones rápidas;20;13000
+4;Slice Salmón Ahumado en Frío;Finas láminas de salmón ahumado. Producto gourmet listo para el consumo;16;9000
+5;Filete Premium;Filete entero congelado;50;22000
