@@ -24,10 +24,12 @@ Duoc UC
 Semana N°6
 
 En esta semana trabajamos sobre el mimso proyecto en Java de la empresa Salmontt usando herencia y poliformismo.  
-Las clases están organizadas en paquetes tales como: `model`, `data` y `ui`.  
-`GestorUnidades` crea centros de cultivo y plantas de proceso.  
-`MainUnidades` imprime todas las unidades en consola.  
-Ejecutar `ui.MainUnidades` para ver el resultado.
+Las clases están organizadas en paquetes tales como: `model`, `data` y `ui`. 
+En model implementamos unas nuevas clases llamadas: UnidadOperativa (SuperClase), CentroCultivo2 y PlantaProceso (subClases)
+ En data implementamos GestorUnidades, crea centros de cultivo y plantas de proceso.  
+ Y finalmente en ui incluimos MainUnidades, que imprime todas las unidades en consola.  
+
+Ejecuta `ui.MainUnidades` para ver el resultado.
 
 
 Andrés Quintero
