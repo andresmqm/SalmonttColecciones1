@@ -34,6 +34,15 @@ public class GestorUnidades {
                  3200
          );
 
+         CentroCultivo2 cc3 = new CentroCultivo2(
+                 "Modulos Sur",
+                 "Coyhaique",
+                 "Desactivada",
+                 "Mar Abierto (Jaulas)",
+                 "Salmon del Pacifico",
+                 0
+         );
+
          PlantaProceso pl1 = new PlantaProceso(
                  "Planta San Antonio",
                  "San Antonio",
@@ -54,6 +63,7 @@ public class GestorUnidades {
 
          listaUnidades.add(cc1);
          listaUnidades.add(cc2);
+         listaUnidades.add(cc3);
          listaUnidades.add(pl1);
          listaUnidades.add(pl2);
 

@@ -13,11 +13,20 @@ public class UnidadOperativa {
         this.estado = estado;
     }
 
+    public String getTipo(){
+        return "UnidadOperativa";
+
+    }
+    public String mostrarInformacion(){
+        return  "Tipo: " + getTipo() + " - " +
+                "Nombre: " + nombre + "-"+
+                "Comuna: " + comuna + "-"+
+                "Estado: " + estado;
+    }
+
     @Override
     public String toString() {
-        return "Nombre: " + nombre +
-                ",  Comuna: " + comuna +
-                ",  Estado: " + estado;
+        return mostrarInformacion();
     }
 
 }

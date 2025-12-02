@@ -32,5 +32,13 @@ En model implementamos unas nuevas clases llamadas: UnidadOperativa (SuperClase)
 Ejecuta `ui.MainUnidades` para ver el resultado.
 
 
+Semana N°7
+
+Seguimos trabajando sobre el mismo proyecto en Java de la empresa Salmontt usando herencia y poliformismo.
+Implementamos las misma SuperClases y SubClases
+El objetivo de esta semana es demostrar el uso de : Herencia, Poliformismo e Implementar un Poliformismo llamadado " mostarInformacion"
+
+
+
 Andrés Quintero
 Duoc UC

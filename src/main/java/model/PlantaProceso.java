@@ -15,10 +15,16 @@ public class PlantaProceso extends UnidadOperativa{
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "   Año Construcción: " + yearConstruccion +
-                "   Tipo: " + tipo +
-                "   Capacidad: " + capacidadProceso;
+    public String getTipo(){
+        return " Planta de Proceso ";
     }
+
+    @Override
+    public String mostrarInformacion() {
+        return super.mostrarInformacion() + "-" +
+                "Año de Construccion: " + yearConstruccion + "-" +
+                " Tipo: "  + tipo + "-" +
+                " Capacidad Proceso: " + capacidadProceso;
+    }
+
 }

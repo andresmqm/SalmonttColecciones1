@@ -16,7 +16,8 @@ public class MainUnidades {
         System.out.println("Listados de Unidades: ");
 
         for (UnidadOperativa u : unidades) {
-            System.out.println(u.toString());
+            System.out.println("===========");
+            System.out.println(u.mostrarInformacion());
         }
     }
 

@@ -14,10 +14,16 @@ public class CentroCultivo2 extends UnidadOperativa {
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "    Tipo Ambiente: " + tipoAmbiente +
-                "    Especie: " + especieCultivada +
-                "    Producción (ton): " + toneladasProduccion;
+    public String getTipo(){
+        return " Centro de Cultivo ";
     }
+
+    @Override
+    public String mostrarInformacion(){
+        return super.mostrarInformacion() + "-" +
+                "Tipo De Ambiente: " + tipoAmbiente + "-" +
+                "Especie Cultivada: " + especieCultivada + "-" +
+                "Produccion (Toneladas): " + toneladasProduccion;
+    }
+
 }

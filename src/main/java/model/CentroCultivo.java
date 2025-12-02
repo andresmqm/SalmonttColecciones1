@@ -7,6 +7,7 @@ public class CentroCultivo {
     private String region;
     private int toneladas;
 
+
     public CentroCultivo(String rut, String nombre, String region, int toneladas) {
         this.rut=rut;
         this.nombre = nombre;
