@@ -1,44 +1,57 @@
-Es un archivo Java que carga información de centros de cultivo desde un archivo `centros.txt`,
-crea objetos con esos datos y los gestiona mediante colecciones.
+Proyecto Salmontt – Java
 
-realiza lo siguiente:
+Proyecto en Java que gestiona centros de cultivo, plantas de proceso y productos de la empresa Salmontt, aplicando Programación Orientada a Objetos.
 
-Lectura de datos desde 
-Creación de objetos CentroCultivo
-Almacenamiento en un ArrayList
-Filtrado por producción (toneladas > 1000)
-Impresión en consola de todos los centros y de los filtrados
+El sistema carga información desde archivos .txt, crea objetos del modelo y los administra mediante colecciones (ArrayList, HashMap).
+Incluye validaciones, búsqueda de productos, estadísticas y salida por consola.
 
+Se implementan herencia, interfaces y polimorfismo, permitiendo recorrer distintas unidades operativas desde una referencia común y mostrar su información usando métodos sobrescritos.
 
-Semana N°5
+Las clases están organizadas en paquetes model, data, libreria, validaciones, resources, excepciones y ui.
 
-Trabajamos en un proyecto java para gestionar centros de cultivo y productos.  
-Carga datos desde archivos `.txt` 
-aplicacion de validaciones y uso de colecciones `ArrayList`, `HashMap`  
-Incluye búsqueda, estadísticas y salida por consola.  
-Ejecución: `ui.Main` (inventario) y `ui.MainCentros` (centros).
+model:
 
-Andrés Quintero
-Duoc UC
+Productos: representa productos del inventario (id, nombre, cantidad, precio).
 
-Semana N°6
+UnidadOperativa: clase base que representa una unidad de la empresa.
 
-En esta semana trabajamos sobre el mimso proyecto en Java de la empresa Salmontt usando herencia y poliformismo.  
-Las clases están organizadas en paquetes tales como: `model`, `data` y `ui`. 
-En model implementamos unas nuevas clases llamadas: UnidadOperativa (SuperClase), CentroCultivo2 y PlantaProceso (subClases)
- En data implementamos GestorUnidades, crea centros de cultivo y plantas de proceso.  
- Y finalmente en ui incluimos MainUnidades, que imprime todas las unidades en consola.  
+CentroCultivo2: hereda de UnidadOperativa y representa centros de cultivo.
 
-Ejecuta `ui.MainUnidades` para ver el resultado.
+PlantaProceso: hereda de UnidadOperativa y representa plantas de proceso.
 
+Registrable (interface): define el método mostrarResumen() para aplicar polimorfismo.
 
-Semana N°7
+data:
 
-Seguimos trabajando sobre el mismo proyecto en Java de la empresa Salmontt usando herencia y poliformismo.
-Implementamos las misma SuperClases y SubClases
-El objetivo de esta semana es demostrar el uso de : Herencia, Poliformismo e Implementar un Poliformismo llamadado " mostarInformacion"
+GestorDatos: lectura de archivos .txt y carga de datos en colecciones.
 
+GestorUnidades: administra una colección List<Registrable> aplicando herencia y polimorfismo.
 
+Librería:
+
+Buscador: métodos estáticos para búsqueda de productos y centros.
+
+Estadisticas: cálculos como valor total de inventario.
+
+Validaciones
+
+ValidadorProducto: valida precios, cantidades y existencia.
+
+ValidadorRut: valida formato de RUT chileno.
+
+Funcionalidades implementadas:
+
+Carga de datos desde archivos .txt.
+
+Uso de ArrayList y HashMap.
+
+ui: La ejecución principal se realiza desde:
+
+ui.Main (inventario)
+
+ui.MainCentros (centros)
+
+ui.MainUnidades (unidades operativas)
 
 Andrés Quintero
 Duoc UC

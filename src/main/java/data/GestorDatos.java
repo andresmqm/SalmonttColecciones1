@@ -5,6 +5,7 @@ import model.CentroCultivo;
 
 import Validaciones.ValidadorProducto;
 import Validaciones.ValidadorRut;
+import Excepciones.RutInvalido;
 
 import java.io.*;
 import java.io.BufferedReader;
@@ -105,12 +106,12 @@ public class GestorDatos {
                     int toneladas = Integer.parseInt(c[3].trim());
 
 
-                    if (!ValidadorRut.validarRut(rut)) {
-                        System.out.println("Rut invalido → " + rut + " (linea omitida)");
-                        continue;
-                    }
+                    ValidadorRut.validarRut(rut);
 
                     mapa.put(rut, new CentroCultivo(rut, nombre, region, toneladas));
+
+                } catch (RutInvalido e) {
+                    System.out.println("RUT invalido → " + e.getMessage() + " (linea omitida)");
 
                 } catch (Exception e) {
                     System.out.println("Error en linea centro: " + linea);

@@ -1,17 +1,22 @@
 package Validaciones;
 
+import Excepciones.RutInvalido;
+
 public class ValidadorRut {
 
-    public static boolean validarRut(String rut) {
+    public static void validarRut(String rut) throws RutInvalido {
 
-        if (rut == null || rut.isBlank()) return false;
-
+        if (rut == null || rut.isBlank()) {
+            throw new RutInvalido("El RUT no puede estar vacío");
+        }
 
         rut = rut.replace(".", "").toUpperCase();
 
-
-        return rut.matches("\\d{7,8}-[0-9K]");
+        if (!rut.matches("\\d{7,8}-[0-9K]")) {
+            throw new RutInvalido("Formato de RUT inválido");
+        }
     }
 }
+
 
 

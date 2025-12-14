@@ -1,24 +1,15 @@
 package ui;
 
 import data.GestorUnidades;
-import model.UnidadOperativa;
-
-import java.util.List;
 
 public class MainUnidades {
     public static void main(String[] args) {
 
 
         GestorUnidades gestor = new GestorUnidades();
+        gestor.crearUnidades();
 
-                List<UnidadOperativa> unidades = gestor.crearUnidades();
-
-        System.out.println("Listados de Unidades: ");
-
-        for (UnidadOperativa u : unidades) {
-            System.out.println("===========");
-            System.out.println(u.mostrarInformacion());
-        }
+        System.out.println("Listado de Unidades:");
+        gestor.mostrarUnidades();
     }
-
-    }
+}

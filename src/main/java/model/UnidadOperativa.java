@@ -1,6 +1,6 @@
 package model;
 
-public class UnidadOperativa {
+public class UnidadOperativa implements Registrable {
 
     private String nombre;
     private String comuna;
@@ -25,7 +25,7 @@ public class UnidadOperativa {
     }
 
     @Override
-    public String toString() {
+    public String mostrarResumen() {
         return mostrarInformacion();
     }
 
