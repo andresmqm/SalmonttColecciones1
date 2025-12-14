@@ -10,15 +10,9 @@ public class MainUnidades {
 
 
         GestorUnidades gestor = new GestorUnidades();
+        gestor.crearUnidades();
 
-                List<UnidadOperativa> unidades = gestor.crearUnidades();
-
-        System.out.println("Listados de Unidades: ");
-
-        for (UnidadOperativa u : unidades) {
-            System.out.println("===========");
-            System.out.println(u.mostrarInformacion());
-        }
+        System.out.println("Listado de Unidades:");
+        gestor.mostrarUnidades();
     }
-
-    }
+}

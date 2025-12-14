@@ -38,7 +38,13 @@ Seguimos trabajando sobre el mismo proyecto en Java de la empresa Salmontt usand
 Implementamos las misma SuperClases y SubClases
 El objetivo de esta semana es demostrar el uso de : Herencia, Poliformismo e Implementar un Poliformismo llamadado " mostarInformacion"
 
+Semana N°8
 
+Durante esta semana se realizaron mejoras y nuevas implementaciones en el proyecto Salmontt.
+Enfocadas en cumplir la pauta académica y fortalecer el diseño orientado a objetos.
+Implementacion de interfaz, refuerzo de herencia y poliformismo.
+Uso de instanceof, para identificar el tipo concreto de cada objeto.
+Y finalmente se recorren elementos usando un bucle for-each
 
 Andrés Quintero
 Duoc UC
